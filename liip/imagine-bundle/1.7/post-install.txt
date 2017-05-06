@@ -1,0 +1,14 @@
+<bg=blue;fg=white>                                 </>
+<bg=blue;fg=white> What's next for Imagine Bundle? </>
+<bg=blue;fg=white>                                 </>
+
+  * <fg=blue>Configure</> your transformations:
+    - Verify and uncomment the config options in <comment>imagine.yaml</>
+    - You MUST specify the image manipulation library, one of <comment>gd</>, <comment>gmagick</>, or <comment>imagick</>
+    - You MAY specify additional transformation definitions under the <comment>filter_sets</> option
+
+  * <fg=blue>Use</> your transformations:
+    - Twig: <comment>{{ imagine_filter('my_thumbnails') }}</>
+    - PHP:  <comment>$this->get('liip_imagine.cache.manager')->getBrowserPath('/relative/path/to/image.jpg', 'my_thumbnails');</>
+
+  * <fg=blue>Read</> the documentation at <comment>https://symfony.com/doc/current/bundles/LiipImagineBundle</>
